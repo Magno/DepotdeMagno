@@ -5237,3 +5237,1719 @@ ActionController::RoutingError (No route matches "/images/logo.png" with {:metho
     script/server:3
 
 Rendering /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-07-03 12:15:36) [GET]
+  Session ID: c0bd5bcca8f1bfae377dac03750f6331
+  Parameters: {"action"=>"index", "controller"=>"store"}
+  [4;36;1mProduct Load (0.000797)[0m   [0;1mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;35;1mProduct Columns (0.001429)[0m   [0mSHOW FIELDS FROM `products`[0m
+Rendered store/_cart (0.00114)
+Completed in 0.05417 (18 reqs/sec) | Rendering: 0.02884 (53%) | DB: 0.00458 (8%) | 200 OK [http://localhost/store]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-03 12:15:36) [GET]
+  Session ID: c0bd5bcca8f1bfae377dac03750f6331
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/images/logo.png" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing/recognition_optimisation.rb:67:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing/route_set.rb:384:in `recognize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:148:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:112:in `handle_dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /vendor/rails/railties/lib/webrick_server.rb:62:in `dispatch'
+    /vendor/rails/railties/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2009-07-03 12:15:41) [POST]
+  Session ID: c0bd5bcca8f1bfae377dac03750f6331
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"c8cd5892495f37edb131aabf7c9f55301168d96f", "action"=>"add_to_cart", "id"=>"2", "controller"=>"store"}
+  [4;36;1mProduct Columns (0.000816)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+  [4;35;1mProduct Load (0.000260)[0m   [0mSELECT * FROM `products` WHERE (`products`.`id` = 2) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (0.00145)
+Rendered store/_cart (0.00286)
+Completed in 0.01904 (52 reqs/sec) | Rendering: 0.00819 (43%) | DB: 0.01004 (52%) | 200 OK [http://localhost/store/add_to_cart/2]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2009-07-03 12:15:45) [POST]
+  Session ID: c0bd5bcca8f1bfae377dac03750f6331
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"c8cd5892495f37edb131aabf7c9f55301168d96f", "action"=>"add_to_cart", "id"=>"3", "controller"=>"store"}
+  [4;36;1mProduct Columns (0.000791)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+  [4;35;1mProduct Load (0.000241)[0m   [0mSELECT * FROM `products` WHERE (`products`.`id` = 3) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (0.00138)
+Rendered store/_cart_item (0.00008)
+Rendered store/_cart (0.00236)
+Completed in 0.01241 (80 reqs/sec) | Rendering: 0.00757 (61%) | DB: 0.01048 (84%) | 200 OK [http://localhost/store/add_to_cart/3]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2009-07-03 12:15:47) [POST]
+  Session ID: c0bd5bcca8f1bfae377dac03750f6331
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"c8cd5892495f37edb131aabf7c9f55301168d96f", "action"=>"add_to_cart", "id"=>"1", "controller"=>"store"}
+  [4;36;1mProduct Columns (0.001457)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+  [4;35;1mProduct Load (0.000429)[0m   [0mSELECT * FROM `products` WHERE (`products`.`id` = 1) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (0.00419)
+Rendered store/_cart_item (0.00021)
+Rendered store/_cart_item (0.00021)
+Rendered store/_cart (0.00652)
+Completed in 0.02856 (35 reqs/sec) | Rendering: 0.01750 (61%) | DB: 0.00886 (31%) | 200 OK [http://localhost/store/add_to_cart/1]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2009-07-03 12:15:48) [POST]
+  Session ID: c0bd5bcca8f1bfae377dac03750f6331
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"c8cd5892495f37edb131aabf7c9f55301168d96f", "action"=>"add_to_cart", "id"=>"2", "controller"=>"store"}
+  [4;36;1mProduct Columns (0.001447)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+  [4;35;1mProduct Load (0.000149)[0m   [0mSELECT * FROM `products` WHERE (`products`.`id` = 2) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (0.00165)
+Rendered store/_cart_item (0.00009)
+Rendered store/_cart_item (0.00008)
+Rendered store/_cart (0.00270)
+Completed in 0.02039 (49 reqs/sec) | Rendering: 0.00975 (47%) | DB: 0.01106 (54%) | 200 OK [http://localhost/store/add_to_cart/2]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-07-03 12:55:14) [GET]
+  Session ID: 3661f7c8b150cb590ce4fd1ea0cc2bf1
+  Parameters: {"action"=>"index", "controller"=>"store"}
+  [4;36;1mProduct Load (0.000166)[0m   [0;1mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;35;1mProduct Columns (0.012796)[0m   [0mSHOW FIELDS FROM `products`[0m
+Rendered store/_cart (0.00035)
+Completed in 0.05721 (17 reqs/sec) | Rendering: 0.00783 (13%) | DB: 0.02148 (37%) | 200 OK [http://localhost/store]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-03 12:55:14) [GET]
+  Session ID: 3661f7c8b150cb590ce4fd1ea0cc2bf1
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/images/logo.png" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing/recognition_optimisation.rb:67:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing/route_set.rb:384:in `recognize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:148:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:112:in `handle_dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /vendor/rails/railties/lib/webrick_server.rb:62:in `dispatch'
+    /vendor/rails/railties/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2009-07-03 12:55:20) [POST]
+  Session ID: 3661f7c8b150cb590ce4fd1ea0cc2bf1
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"aacb307c697e41b3151c0e75a28a5e38cd23ea89", "action"=>"add_to_cart", "id"=>"1", "controller"=>"store"}
+  [4;36;1mProduct Columns (0.001515)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+  [4;35;1mProduct Load (0.000152)[0m   [0mSELECT * FROM `products` WHERE (`products`.`id` = 1) [0m
+Rendering store/add_to_cart
+ERROR: compiling _run_rjs_47app47views47store47add_to_cart46js46rjs RAISED compile error
+/home/magno/rubys/work/depot/app/views/store/add_to_cart.js.rjs:3: syntax error, unexpected tASSOC, expecting kEND
+																	:startcolor => "#88ff88",
+																	              ^
+/home/magno/rubys/work/depot/app/views/store/add_to_cart.js.rjs:3: syntax error, unexpected ',', expecting kEND
+Function body: def _run_rjs_47app47views47store47add_to_cart46js46rjs(local_assigns)
+controller.response.content_type ||= Mime::JS
+update_page do |page|
+page.replace_html("cart", :partial => "cart", :object => @cart)
+page[:current_item].visual_effect :highlight
+																	:startcolor => "#88ff88",
+																	:endcolor => "#114411"
+
+end
+end
+Backtrace: /home/magno/rubys/work/depot/app/views/store/add_to_cart.js.rjs:7:in `compile_template'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_view/template.rb:55:in `prepare!'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_view/template.rb:34:in `render'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_view/template.rb:22:in `render_template'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_view/base.rb:245:in `render_file'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/base.rb:1108:in `render_for_file'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/base.rb:865:in `render_with_no_layout'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/base.rb:880:in `render_with_no_layout'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/layout.rb:259:in `render_without_benchmark'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+/home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/mime_responds.rb:131:in `send'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/mime_responds.rb:131:in `custom'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/mime_responds.rb:160:in `call'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/mime_responds.rb:160:in `respond'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/mime_responds.rb:154:in `each'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/mime_responds.rb:154:in `respond'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/home/magno/rubys/work/depot/app/controllers/store_controller.rb:11:in `add_to_cart'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/base.rb:1162:in `send'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/base.rb:1162:in `perform_action_without_filters'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/filters.rb:580:in `call_filters'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+/home/magno/rubys/work/depot/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+/home/magno/rubys/work/depot/vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/base.rb:529:in `send'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/base.rb:529:in `process_without_filters'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/session_management.rb:130:in `process'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/base.rb:389:in `process'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:149:in `handle_request'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+/home/magno/rubys/work/depot/vendor/rails/railties/lib/webrick_server.rb:112:in `handle_dispatch'
+/home/magno/rubys/work/depot/vendor/rails/railties/lib/webrick_server.rb:78:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/home/magno/rubys/work/depot/vendor/rails/railties/lib/webrick_server.rb:62:in `dispatch'
+/home/magno/rubys/work/depot/vendor/rails/railties/lib/commands/servers/webrick.rb:66
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+/home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+/home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+/home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+/home/magno/rubys/work/depot/vendor/rails/railties/lib/commands/server.rb:39
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+
+ActionView::TemplateError (compile error
+/home/magno/rubys/work/depot/app/views/store/add_to_cart.js.rjs:3: syntax error, unexpected tASSOC, expecting kEND
+																	:startcolor => "#88ff88",
+																	              ^
+/home/magno/rubys/work/depot/app/views/store/add_to_cart.js.rjs:3: syntax error, unexpected ',', expecting kEND) on line #3 of store/add_to_cart.js.rjs:
+1: page.replace_html("cart", :partial => "cart", :object => @cart)
+2: page[:current_item].visual_effect :highlight
+3: 																	:startcolor => "#88ff88",
+4: 																	:endcolor => "#114411"
+
+    app/views/store/add_to_cart.js.rjs:7:in `compile_template'
+    vendor/rails/actionpack/lib/action_view/template.rb:55:in `prepare!'
+    vendor/rails/actionpack/lib/action_view/template.rb:34:in `render'
+    vendor/rails/actionpack/lib/action_view/template.rb:22:in `render_template'
+    vendor/rails/actionpack/lib/action_view/base.rb:245:in `render_file'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1108:in `render_for_file'
+    vendor/rails/actionpack/lib/action_controller/base.rb:865:in `render_with_no_layout'
+    vendor/rails/actionpack/lib/action_controller/base.rb:880:in `render_with_no_layout'
+    vendor/rails/actionpack/lib/action_controller/layout.rb:259:in `render_without_benchmark'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:131:in `send'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:131:in `custom'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:160:in `call'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:160:in `respond'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:154:in `each'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:154:in `respond'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:107:in `respond_to'
+    app/controllers/store_controller.rb:11:in `add_to_cart'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1162:in `send'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1162:in `perform_action_without_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:580:in `call_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    vendor/rails/actionpack/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+    vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    vendor/rails/actionpack/lib/action_controller/base.rb:529:in `send'
+    vendor/rails/actionpack/lib/action_controller/base.rb:529:in `process_without_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    vendor/rails/actionpack/lib/action_controller/session_management.rb:130:in `process'
+    vendor/rails/actionpack/lib/action_controller/base.rb:389:in `process'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    vendor/rails/railties/lib/webrick_server.rb:112:in `handle_dispatch'
+    vendor/rails/railties/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    vendor/rails/railties/lib/webrick_server.rb:62:in `dispatch'
+    vendor/rails/railties/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    vendor/rails/railties/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2009-07-03 12:55:20) [POST]
+  Session ID: 3661f7c8b150cb590ce4fd1ea0cc2bf1
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"aacb307c697e41b3151c0e75a28a5e38cd23ea89", "action"=>"add_to_cart", "id"=>"2", "controller"=>"store"}
+  [4;36;1mProduct Columns (0.000772)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+  [4;35;1mProduct Load (0.000066)[0m   [0mSELECT * FROM `products` WHERE (`products`.`id` = 2) [0m
+Rendering store/add_to_cart
+ERROR: compiling _run_rjs_47app47views47store47add_to_cart46js46rjs RAISED compile error
+/home/magno/rubys/work/depot/app/views/store/add_to_cart.js.rjs:3: syntax error, unexpected tASSOC, expecting kEND
+																	:startcolor => "#88ff88",
+																	              ^
+/home/magno/rubys/work/depot/app/views/store/add_to_cart.js.rjs:3: syntax error, unexpected ',', expecting kEND
+Function body: def _run_rjs_47app47views47store47add_to_cart46js46rjs(local_assigns)
+controller.response.content_type ||= Mime::JS
+update_page do |page|
+page.replace_html("cart", :partial => "cart", :object => @cart)
+page[:current_item].visual_effect :highlight
+																	:startcolor => "#88ff88",
+																	:endcolor => "#114411"
+
+end
+end
+Backtrace: /home/magno/rubys/work/depot/app/views/store/add_to_cart.js.rjs:7:in `compile_template'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_view/template.rb:55:in `prepare!'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_view/template.rb:34:in `render'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_view/template.rb:22:in `render_template'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_view/base.rb:245:in `render_file'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/base.rb:1108:in `render_for_file'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/base.rb:865:in `render_with_no_layout'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/base.rb:880:in `render_with_no_layout'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/layout.rb:259:in `render_without_benchmark'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+/home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/mime_responds.rb:131:in `send'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/mime_responds.rb:131:in `custom'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/mime_responds.rb:160:in `call'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/mime_responds.rb:160:in `respond'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/mime_responds.rb:154:in `each'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/mime_responds.rb:154:in `respond'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/home/magno/rubys/work/depot/app/controllers/store_controller.rb:11:in `add_to_cart'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/base.rb:1162:in `send'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/base.rb:1162:in `perform_action_without_filters'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/filters.rb:580:in `call_filters'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+/home/magno/rubys/work/depot/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+/home/magno/rubys/work/depot/vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/base.rb:529:in `send'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/base.rb:529:in `process_without_filters'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/session_management.rb:130:in `process'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/base.rb:389:in `process'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:149:in `handle_request'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+/home/magno/rubys/work/depot/vendor/rails/railties/lib/webrick_server.rb:112:in `handle_dispatch'
+/home/magno/rubys/work/depot/vendor/rails/railties/lib/webrick_server.rb:78:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/home/magno/rubys/work/depot/vendor/rails/railties/lib/webrick_server.rb:62:in `dispatch'
+/home/magno/rubys/work/depot/vendor/rails/railties/lib/commands/servers/webrick.rb:66
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+/home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+/home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+/home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+/home/magno/rubys/work/depot/vendor/rails/railties/lib/commands/server.rb:39
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+
+ActionView::TemplateError (compile error
+/home/magno/rubys/work/depot/app/views/store/add_to_cart.js.rjs:3: syntax error, unexpected tASSOC, expecting kEND
+																	:startcolor => "#88ff88",
+																	              ^
+/home/magno/rubys/work/depot/app/views/store/add_to_cart.js.rjs:3: syntax error, unexpected ',', expecting kEND) on line #3 of store/add_to_cart.js.rjs:
+1: page.replace_html("cart", :partial => "cart", :object => @cart)
+2: page[:current_item].visual_effect :highlight
+3: 																	:startcolor => "#88ff88",
+4: 																	:endcolor => "#114411"
+
+    app/views/store/add_to_cart.js.rjs:7:in `compile_template'
+    vendor/rails/actionpack/lib/action_view/template.rb:55:in `prepare!'
+    vendor/rails/actionpack/lib/action_view/template.rb:34:in `render'
+    vendor/rails/actionpack/lib/action_view/template.rb:22:in `render_template'
+    vendor/rails/actionpack/lib/action_view/base.rb:245:in `render_file'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1108:in `render_for_file'
+    vendor/rails/actionpack/lib/action_controller/base.rb:865:in `render_with_no_layout'
+    vendor/rails/actionpack/lib/action_controller/base.rb:880:in `render_with_no_layout'
+    vendor/rails/actionpack/lib/action_controller/layout.rb:259:in `render_without_benchmark'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:131:in `send'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:131:in `custom'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:160:in `call'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:160:in `respond'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:154:in `each'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:154:in `respond'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:107:in `respond_to'
+    app/controllers/store_controller.rb:11:in `add_to_cart'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1162:in `send'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1162:in `perform_action_without_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:580:in `call_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    vendor/rails/actionpack/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+    vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    vendor/rails/actionpack/lib/action_controller/base.rb:529:in `send'
+    vendor/rails/actionpack/lib/action_controller/base.rb:529:in `process_without_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    vendor/rails/actionpack/lib/action_controller/session_management.rb:130:in `process'
+    vendor/rails/actionpack/lib/action_controller/base.rb:389:in `process'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    vendor/rails/railties/lib/webrick_server.rb:112:in `handle_dispatch'
+    vendor/rails/railties/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    vendor/rails/railties/lib/webrick_server.rb:62:in `dispatch'
+    vendor/rails/railties/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    vendor/rails/railties/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2009-07-03 12:55:22) [POST]
+  Session ID: 3661f7c8b150cb590ce4fd1ea0cc2bf1
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"aacb307c697e41b3151c0e75a28a5e38cd23ea89", "action"=>"add_to_cart", "id"=>"3", "controller"=>"store"}
+  [4;36;1mProduct Columns (0.001418)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+  [4;35;1mProduct Load (0.000169)[0m   [0mSELECT * FROM `products` WHERE (`products`.`id` = 3) [0m
+Rendering store/add_to_cart
+ERROR: compiling _run_rjs_47app47views47store47add_to_cart46js46rjs RAISED compile error
+/home/magno/rubys/work/depot/app/views/store/add_to_cart.js.rjs:3: syntax error, unexpected tASSOC, expecting kEND
+																	:startcolor => "#88ff88",
+																	              ^
+/home/magno/rubys/work/depot/app/views/store/add_to_cart.js.rjs:3: syntax error, unexpected ',', expecting kEND
+Function body: def _run_rjs_47app47views47store47add_to_cart46js46rjs(local_assigns)
+controller.response.content_type ||= Mime::JS
+update_page do |page|
+page.replace_html("cart", :partial => "cart", :object => @cart)
+page[:current_item].visual_effect :highlight
+																	:startcolor => "#88ff88",
+																	:endcolor => "#114411"
+
+end
+end
+Backtrace: /home/magno/rubys/work/depot/app/views/store/add_to_cart.js.rjs:7:in `compile_template'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_view/template.rb:55:in `prepare!'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_view/template.rb:34:in `render'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_view/template.rb:22:in `render_template'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_view/base.rb:245:in `render_file'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/base.rb:1108:in `render_for_file'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/base.rb:865:in `render_with_no_layout'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/base.rb:880:in `render_with_no_layout'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/layout.rb:259:in `render_without_benchmark'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+/home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/mime_responds.rb:131:in `send'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/mime_responds.rb:131:in `custom'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/mime_responds.rb:160:in `call'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/mime_responds.rb:160:in `respond'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/mime_responds.rb:154:in `each'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/mime_responds.rb:154:in `respond'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/home/magno/rubys/work/depot/app/controllers/store_controller.rb:11:in `add_to_cart'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/base.rb:1162:in `send'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/base.rb:1162:in `perform_action_without_filters'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/filters.rb:580:in `call_filters'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+/home/magno/rubys/work/depot/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+/home/magno/rubys/work/depot/vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/base.rb:529:in `send'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/base.rb:529:in `process_without_filters'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/session_management.rb:130:in `process'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/base.rb:389:in `process'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:149:in `handle_request'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+/home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+/home/magno/rubys/work/depot/vendor/rails/railties/lib/webrick_server.rb:112:in `handle_dispatch'
+/home/magno/rubys/work/depot/vendor/rails/railties/lib/webrick_server.rb:78:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/home/magno/rubys/work/depot/vendor/rails/railties/lib/webrick_server.rb:62:in `dispatch'
+/home/magno/rubys/work/depot/vendor/rails/railties/lib/commands/servers/webrick.rb:66
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+/home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+/home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+/home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+/home/magno/rubys/work/depot/vendor/rails/railties/lib/commands/server.rb:39
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+
+ActionView::TemplateError (compile error
+/home/magno/rubys/work/depot/app/views/store/add_to_cart.js.rjs:3: syntax error, unexpected tASSOC, expecting kEND
+																	:startcolor => "#88ff88",
+																	              ^
+/home/magno/rubys/work/depot/app/views/store/add_to_cart.js.rjs:3: syntax error, unexpected ',', expecting kEND) on line #3 of store/add_to_cart.js.rjs:
+1: page.replace_html("cart", :partial => "cart", :object => @cart)
+2: page[:current_item].visual_effect :highlight
+3: 																	:startcolor => "#88ff88",
+4: 																	:endcolor => "#114411"
+
+    app/views/store/add_to_cart.js.rjs:7:in `compile_template'
+    vendor/rails/actionpack/lib/action_view/template.rb:55:in `prepare!'
+    vendor/rails/actionpack/lib/action_view/template.rb:34:in `render'
+    vendor/rails/actionpack/lib/action_view/template.rb:22:in `render_template'
+    vendor/rails/actionpack/lib/action_view/base.rb:245:in `render_file'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1108:in `render_for_file'
+    vendor/rails/actionpack/lib/action_controller/base.rb:865:in `render_with_no_layout'
+    vendor/rails/actionpack/lib/action_controller/base.rb:880:in `render_with_no_layout'
+    vendor/rails/actionpack/lib/action_controller/layout.rb:259:in `render_without_benchmark'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:131:in `send'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:131:in `custom'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:160:in `call'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:160:in `respond'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:154:in `each'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:154:in `respond'
+    vendor/rails/actionpack/lib/action_controller/mime_responds.rb:107:in `respond_to'
+    app/controllers/store_controller.rb:11:in `add_to_cart'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1162:in `send'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1162:in `perform_action_without_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:580:in `call_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    vendor/rails/actionpack/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+    vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    vendor/rails/actionpack/lib/action_controller/base.rb:529:in `send'
+    vendor/rails/actionpack/lib/action_controller/base.rb:529:in `process_without_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    vendor/rails/actionpack/lib/action_controller/session_management.rb:130:in `process'
+    vendor/rails/actionpack/lib/action_controller/base.rb:389:in `process'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    vendor/rails/railties/lib/webrick_server.rb:112:in `handle_dispatch'
+    vendor/rails/railties/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    vendor/rails/railties/lib/webrick_server.rb:62:in `dispatch'
+    vendor/rails/railties/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    vendor/rails/railties/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2009-07-03 12:57:48) [POST]
+  Session ID: 3661f7c8b150cb590ce4fd1ea0cc2bf1
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"aacb307c697e41b3151c0e75a28a5e38cd23ea89", "action"=>"add_to_cart", "id"=>"1", "controller"=>"store"}
+  [4;36;1mProduct Columns (0.001443)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+  [4;35;1mProduct Load (0.000140)[0m   [0mSELECT * FROM `products` WHERE (`products`.`id` = 1) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (0.00288)
+Rendered store/_cart_item (0.00024)
+Rendered store/_cart_item (0.00019)
+Rendered store/_cart (0.02239)
+Completed in 0.04386 (22 reqs/sec) | Rendering: 0.03436 (78%) | DB: 0.00853 (19%) | 200 OK [http://localhost/store/add_to_cart/1]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2009-07-03 12:57:51) [POST]
+  Session ID: 3661f7c8b150cb590ce4fd1ea0cc2bf1
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"aacb307c697e41b3151c0e75a28a5e38cd23ea89", "action"=>"add_to_cart", "id"=>"2", "controller"=>"store"}
+  [4;36;1mProduct Columns (0.001442)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+  [4;35;1mProduct Load (0.000144)[0m   [0mSELECT * FROM `products` WHERE (`products`.`id` = 2) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (0.00289)
+Rendered store/_cart_item (0.00020)
+Rendered store/_cart_item (0.00026)
+Rendered store/_cart (0.00522)
+Completed in 0.02865 (34 reqs/sec) | Rendering: 0.01913 (66%) | DB: 0.00714 (24%) | 200 OK [http://localhost/store/add_to_cart/2]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2009-07-03 12:57:56) [POST]
+  Session ID: 3661f7c8b150cb590ce4fd1ea0cc2bf1
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"aacb307c697e41b3151c0e75a28a5e38cd23ea89", "action"=>"add_to_cart", "id"=>"3", "controller"=>"store"}
+  [4;36;1mProduct Columns (0.001441)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+  [4;35;1mProduct Load (0.000165)[0m   [0mSELECT * FROM `products` WHERE (`products`.`id` = 3) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (0.00292)
+Rendered store/_cart_item (0.00021)
+Rendered store/_cart_item (0.00019)
+Rendered store/_cart (0.00513)
+Completed in 0.02640 (37 reqs/sec) | Rendering: 0.01683 (63%) | DB: 0.01309 (49%) | 200 OK [http://localhost/store/add_to_cart/3]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2009-07-03 12:58:00) [POST]
+  Session ID: 3661f7c8b150cb590ce4fd1ea0cc2bf1
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"aacb307c697e41b3151c0e75a28a5e38cd23ea89", "action"=>"add_to_cart", "id"=>"2", "controller"=>"store"}
+  [4;36;1mProduct Columns (0.000801)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+  [4;35;1mProduct Load (0.000068)[0m   [0mSELECT * FROM `products` WHERE (`products`.`id` = 2) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (0.00151)
+Rendered store/_cart_item (0.00009)
+Rendered store/_cart_item (0.00008)
+Rendered store/_cart (0.00262)
+Completed in 0.01396 (71 reqs/sec) | Rendering: 0.00902 (64%) | DB: 0.00861 (61%) | 200 OK [http://localhost/store/add_to_cart/2]
+
+
+Processing StoreController#empty_cart (for 127.0.0.1 at 2009-07-03 12:58:03) [POST]
+  Session ID: 3661f7c8b150cb590ce4fd1ea0cc2bf1
+  Parameters: {"authenticity_token"=>"aacb307c697e41b3151c0e75a28a5e38cd23ea89", "action"=>"empty_cart", "controller"=>"store"}
+Redirected to http://localhost:3000/store
+Completed in 0.00551 (181 reqs/sec) | DB: 0.00912 (165%) | 302 Found [http://localhost/store/empty_cart]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-07-03 12:58:03) [GET]
+  Session ID: 3661f7c8b150cb590ce4fd1ea0cc2bf1
+  Parameters: {"action"=>"index", "controller"=>"store"}
+  [4;36;1mProduct Load (0.000127)[0m   [0;1mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;35;1mProduct Columns (0.000920)[0m   [0mSHOW FIELDS FROM `products`[0m
+Rendered store/_cart (0.00036)
+Completed in 0.02494 (40 reqs/sec) | Rendering: 0.01015 (40%) | DB: 0.00612 (24%) | 200 OK [http://localhost/store]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-03 12:58:03) [GET]
+  Session ID: 3661f7c8b150cb590ce4fd1ea0cc2bf1
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/images/logo.png" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing/recognition_optimisation.rb:67:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing/route_set.rb:384:in `recognize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:148:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:112:in `handle_dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /vendor/rails/railties/lib/webrick_server.rb:62:in `dispatch'
+    /vendor/rails/railties/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2009-07-03 12:58:06) [POST]
+  Session ID: 3661f7c8b150cb590ce4fd1ea0cc2bf1
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"aacb307c697e41b3151c0e75a28a5e38cd23ea89", "action"=>"add_to_cart", "id"=>"1", "controller"=>"store"}
+  [4;36;1mProduct Columns (0.001396)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+  [4;35;1mProduct Load (0.000139)[0m   [0mSELECT * FROM `products` WHERE (`products`.`id` = 1) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (0.00303)
+Rendered store/_cart (0.00460)
+Completed in 0.03813 (26 reqs/sec) | Rendering: 0.01589 (41%) | DB: 0.01727 (45%) | 200 OK [http://localhost/store/add_to_cart/1]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2009-07-03 12:58:08) [POST]
+  Session ID: 3661f7c8b150cb590ce4fd1ea0cc2bf1
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"aacb307c697e41b3151c0e75a28a5e38cd23ea89", "action"=>"add_to_cart", "id"=>"2", "controller"=>"store"}
+  [4;36;1mProduct Columns (0.000775)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+  [4;35;1mProduct Load (0.000066)[0m   [0mSELECT * FROM `products` WHERE (`products`.`id` = 2) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (0.00129)
+Rendered store/_cart_item (0.00008)
+Rendered store/_cart (0.00215)
+Completed in 0.01194 (83 reqs/sec) | Rendering: 0.00760 (63%) | DB: 0.00941 (78%) | 200 OK [http://localhost/store/add_to_cart/2]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2009-07-03 12:58:10) [POST]
+  Session ID: 3661f7c8b150cb590ce4fd1ea0cc2bf1
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"aacb307c697e41b3151c0e75a28a5e38cd23ea89", "action"=>"add_to_cart", "id"=>"3", "controller"=>"store"}
+  [4;36;1mProduct Columns (0.000812)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+  [4;35;1mProduct Load (0.000067)[0m   [0mSELECT * FROM `products` WHERE (`products`.`id` = 3) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (0.00146)
+Rendered store/_cart_item (0.00009)
+Rendered store/_cart_item (0.00008)
+Rendered store/_cart (0.00257)
+Completed in 0.01311 (76 reqs/sec) | Rendering: 0.00821 (62%) | DB: 0.00871 (66%) | 200 OK [http://localhost/store/add_to_cart/3]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-07-03 13:02:13) [GET]
+  Session ID: 3661f7c8b150cb590ce4fd1ea0cc2bf1
+  Parameters: {"action"=>"index", "controller"=>"store"}
+  [4;36;1mProduct Load (0.000088)[0m   [0;1mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;35;1mProduct Columns (0.000779)[0m   [0mSHOW FIELDS FROM `products`[0m
+Rendered store/_cart_item (0.00013)
+Rendered store/_cart_item (0.00008)
+Rendered store/_cart_item (0.00008)
+Rendered store/_cart (0.00174)
+Completed in 0.01133 (88 reqs/sec) | Rendering: 0.00795 (70%) | DB: 0.00771 (68%) | 200 OK [http://localhost/store]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-03 13:02:14) [GET]
+  Session ID: 3661f7c8b150cb590ce4fd1ea0cc2bf1
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/images/logo.png" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing/recognition_optimisation.rb:67:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing/route_set.rb:384:in `recognize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:148:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:112:in `handle_dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /vendor/rails/railties/lib/webrick_server.rb:62:in `dispatch'
+    /vendor/rails/railties/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2009-07-03 13:02:17) [POST]
+  Session ID: 3661f7c8b150cb590ce4fd1ea0cc2bf1
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"aacb307c697e41b3151c0e75a28a5e38cd23ea89", "action"=>"add_to_cart", "id"=>"3", "controller"=>"store"}
+  [4;36;1mProduct Columns (0.001450)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+  [4;35;1mProduct Load (0.000146)[0m   [0mSELECT * FROM `products` WHERE (`products`.`id` = 3) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (0.00295)
+Rendered store/_cart_item (0.00021)
+Rendered store/_cart_item (0.00019)
+Rendered store/_cart (0.00518)
+Completed in 0.02695 (37 reqs/sec) | Rendering: 0.01723 (63%) | DB: 0.03829 (142%) | 200 OK [http://localhost/store/add_to_cart/3]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2009-07-03 13:02:18) [POST]
+  Session ID: 3661f7c8b150cb590ce4fd1ea0cc2bf1
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"aacb307c697e41b3151c0e75a28a5e38cd23ea89", "action"=>"add_to_cart", "id"=>"2", "controller"=>"store"}
+  [4;36;1mProduct Columns (0.001438)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+  [4;35;1mProduct Load (0.000143)[0m   [0mSELECT * FROM `products` WHERE (`products`.`id` = 2) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (0.00292)
+Rendered store/_cart_item (0.00020)
+Rendered store/_cart_item (0.00022)
+Rendered store/_cart (0.00517)
+Completed in 0.02625 (38 reqs/sec) | Rendering: 0.01678 (63%) | DB: 0.00968 (36%) | 200 OK [http://localhost/store/add_to_cart/2]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2009-07-03 13:02:20) [POST]
+  Session ID: 3661f7c8b150cb590ce4fd1ea0cc2bf1
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"aacb307c697e41b3151c0e75a28a5e38cd23ea89", "action"=>"add_to_cart", "id"=>"1", "controller"=>"store"}
+  [4;36;1mProduct Columns (0.000840)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+  [4;35;1mProduct Load (0.000066)[0m   [0mSELECT * FROM `products` WHERE (`products`.`id` = 1) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (0.00148)
+Rendered store/_cart_item (0.00009)
+Rendered store/_cart_item (0.00008)
+Rendered store/_cart (0.00257)
+Completed in 0.01320 (75 reqs/sec) | Rendering: 0.00822 (62%) | DB: 0.00801 (60%) | 200 OK [http://localhost/store/add_to_cart/1]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2009-07-03 13:18:22) [POST]
+  Session ID: 3661f7c8b150cb590ce4fd1ea0cc2bf1
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"aacb307c697e41b3151c0e75a28a5e38cd23ea89", "action"=>"add_to_cart", "id"=>"2", "controller"=>"store"}
+  [4;36;1mProduct Columns (0.002003)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+  [4;35;1mProduct Load (0.000069)[0m   [0mSELECT * FROM `products` WHERE (`products`.`id` = 2) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (0.00135)
+Rendered store/_cart_item (0.00009)
+Rendered store/_cart_item (0.00008)
+Rendered store/_cart (0.00242)
+Completed in 0.01867 (53 reqs/sec) | Rendering: 0.00940 (50%) | DB: 0.00774 (41%) | 200 OK [http://localhost/store/add_to_cart/2]
+/!\ FAILSAFE /!\  Fri Jul 03 13:44:14 -0500 2009
+  Status: 500 Internal Server Error
+  /home/magno/rubys/work/depot/app/models/cart.rb:26: syntax error, unexpected $end, expecting kEND
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:215:in `load_without_new_constant_marking'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:215:in `load_file'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:214:in `load_file'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:95:in `require_or_load'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:260:in `load_missing_constant'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:467:in `const_missing'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:479:in `const_missing'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/inflector.rb:283:in `constantize'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/core_ext/string/inflections.rb:143:in `constantize'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/cgi_process.rb:173:in `stale_session_check!'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/cgi_process.rb:116:in `session'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/base.rb:1135:in `assign_shortcuts_without_flash'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/flash.rb:166:in `assign_shortcuts'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/base.rb:523:in `process_without_filters'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/session_management.rb:130:in `process'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/base.rb:389:in `process'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /home/magno/rubys/work/depot/vendor/rails/railties/lib/webrick_server.rb:112:in `handle_dispatch'
+    /home/magno/rubys/work/depot/vendor/rails/railties/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /home/magno/rubys/work/depot/vendor/rails/railties/lib/webrick_server.rb:62:in `dispatch'
+    /home/magno/rubys/work/depot/vendor/rails/railties/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /home/magno/rubys/work/depot/vendor/rails/railties/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+/!\ FAILSAFE /!\  Fri Jul 03 13:44:16 -0500 2009
+  Status: 500 Internal Server Error
+  /home/magno/rubys/work/depot/app/models/cart.rb:26: syntax error, unexpected $end, expecting kEND
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:215:in `load_without_new_constant_marking'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:215:in `load_file'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:214:in `load_file'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:95:in `require_or_load'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:260:in `load_missing_constant'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:467:in `const_missing'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:479:in `const_missing'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/inflector.rb:283:in `constantize'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/core_ext/string/inflections.rb:143:in `constantize'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/cgi_process.rb:173:in `stale_session_check!'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/cgi_process.rb:116:in `session'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/base.rb:1135:in `assign_shortcuts_without_flash'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/flash.rb:166:in `assign_shortcuts'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/base.rb:523:in `process_without_filters'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/session_management.rb:130:in `process'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/base.rb:389:in `process'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /home/magno/rubys/work/depot/vendor/rails/railties/lib/webrick_server.rb:112:in `handle_dispatch'
+    /home/magno/rubys/work/depot/vendor/rails/railties/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /home/magno/rubys/work/depot/vendor/rails/railties/lib/webrick_server.rb:62:in `dispatch'
+    /home/magno/rubys/work/depot/vendor/rails/railties/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /home/magno/rubys/work/depot/vendor/rails/railties/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+/!\ FAILSAFE /!\  Fri Jul 03 13:44:16 -0500 2009
+  Status: 500 Internal Server Error
+  /home/magno/rubys/work/depot/app/models/cart.rb:26: syntax error, unexpected $end, expecting kEND
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:215:in `load_without_new_constant_marking'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:215:in `load_file'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:214:in `load_file'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:95:in `require_or_load'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:260:in `load_missing_constant'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:467:in `const_missing'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:479:in `const_missing'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/inflector.rb:283:in `constantize'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/core_ext/string/inflections.rb:143:in `constantize'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/cgi_process.rb:173:in `stale_session_check!'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/cgi_process.rb:116:in `session'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/base.rb:1135:in `assign_shortcuts_without_flash'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/flash.rb:166:in `assign_shortcuts'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/base.rb:523:in `process_without_filters'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/session_management.rb:130:in `process'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/base.rb:389:in `process'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /home/magno/rubys/work/depot/vendor/rails/railties/lib/webrick_server.rb:112:in `handle_dispatch'
+    /home/magno/rubys/work/depot/vendor/rails/railties/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /home/magno/rubys/work/depot/vendor/rails/railties/lib/webrick_server.rb:62:in `dispatch'
+    /home/magno/rubys/work/depot/vendor/rails/railties/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /home/magno/rubys/work/depot/vendor/rails/railties/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+/!\ FAILSAFE /!\  Fri Jul 03 13:44:16 -0500 2009
+  Status: 500 Internal Server Error
+  /home/magno/rubys/work/depot/app/models/cart.rb:26: syntax error, unexpected $end, expecting kEND
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:215:in `load_without_new_constant_marking'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:215:in `load_file'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:214:in `load_file'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:95:in `require_or_load'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:260:in `load_missing_constant'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:467:in `const_missing'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:479:in `const_missing'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/inflector.rb:283:in `constantize'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/core_ext/string/inflections.rb:143:in `constantize'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/cgi_process.rb:173:in `stale_session_check!'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/cgi_process.rb:116:in `session'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/base.rb:1135:in `assign_shortcuts_without_flash'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/flash.rb:166:in `assign_shortcuts'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/base.rb:523:in `process_without_filters'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/session_management.rb:130:in `process'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/base.rb:389:in `process'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /home/magno/rubys/work/depot/vendor/rails/railties/lib/webrick_server.rb:112:in `handle_dispatch'
+    /home/magno/rubys/work/depot/vendor/rails/railties/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /home/magno/rubys/work/depot/vendor/rails/railties/lib/webrick_server.rb:62:in `dispatch'
+    /home/magno/rubys/work/depot/vendor/rails/railties/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /home/magno/rubys/work/depot/vendor/rails/railties/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+/!\ FAILSAFE /!\  Fri Jul 03 13:44:16 -0500 2009
+  Status: 500 Internal Server Error
+  /home/magno/rubys/work/depot/app/models/cart.rb:26: syntax error, unexpected $end, expecting kEND
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:215:in `load_without_new_constant_marking'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:215:in `load_file'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:214:in `load_file'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:95:in `require_or_load'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:260:in `load_missing_constant'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:467:in `const_missing'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:479:in `const_missing'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/inflector.rb:283:in `constantize'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/core_ext/string/inflections.rb:143:in `constantize'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/cgi_process.rb:173:in `stale_session_check!'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/cgi_process.rb:116:in `session'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/base.rb:1135:in `assign_shortcuts_without_flash'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/flash.rb:166:in `assign_shortcuts'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/base.rb:523:in `process_without_filters'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/session_management.rb:130:in `process'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/base.rb:389:in `process'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /home/magno/rubys/work/depot/vendor/rails/railties/lib/webrick_server.rb:112:in `handle_dispatch'
+    /home/magno/rubys/work/depot/vendor/rails/railties/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /home/magno/rubys/work/depot/vendor/rails/railties/lib/webrick_server.rb:62:in `dispatch'
+    /home/magno/rubys/work/depot/vendor/rails/railties/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /home/magno/rubys/work/depot/vendor/rails/railties/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+/!\ FAILSAFE /!\  Fri Jul 03 13:44:17 -0500 2009
+  Status: 500 Internal Server Error
+  /home/magno/rubys/work/depot/app/models/cart.rb:26: syntax error, unexpected $end, expecting kEND
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:215:in `load_without_new_constant_marking'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:215:in `load_file'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:214:in `load_file'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:95:in `require_or_load'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:260:in `load_missing_constant'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:467:in `const_missing'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:479:in `const_missing'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/inflector.rb:283:in `constantize'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/core_ext/string/inflections.rb:143:in `constantize'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/cgi_process.rb:173:in `stale_session_check!'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/cgi_process.rb:116:in `session'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/base.rb:1135:in `assign_shortcuts_without_flash'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/flash.rb:166:in `assign_shortcuts'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/base.rb:523:in `process_without_filters'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/session_management.rb:130:in `process'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/base.rb:389:in `process'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /home/magno/rubys/work/depot/vendor/rails/railties/lib/webrick_server.rb:112:in `handle_dispatch'
+    /home/magno/rubys/work/depot/vendor/rails/railties/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /home/magno/rubys/work/depot/vendor/rails/railties/lib/webrick_server.rb:62:in `dispatch'
+    /home/magno/rubys/work/depot/vendor/rails/railties/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /home/magno/rubys/work/depot/vendor/rails/railties/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+/!\ FAILSAFE /!\  Fri Jul 03 13:44:17 -0500 2009
+  Status: 500 Internal Server Error
+  /home/magno/rubys/work/depot/app/models/cart.rb:26: syntax error, unexpected $end, expecting kEND
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:215:in `load_without_new_constant_marking'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:215:in `load_file'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:214:in `load_file'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:95:in `require_or_load'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:260:in `load_missing_constant'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:467:in `const_missing'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:479:in `const_missing'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/inflector.rb:283:in `constantize'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/core_ext/string/inflections.rb:143:in `constantize'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/cgi_process.rb:173:in `stale_session_check!'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/cgi_process.rb:116:in `session'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/base.rb:1135:in `assign_shortcuts_without_flash'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/flash.rb:166:in `assign_shortcuts'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/base.rb:523:in `process_without_filters'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/session_management.rb:130:in `process'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/base.rb:389:in `process'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /home/magno/rubys/work/depot/vendor/rails/railties/lib/webrick_server.rb:112:in `handle_dispatch'
+    /home/magno/rubys/work/depot/vendor/rails/railties/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /home/magno/rubys/work/depot/vendor/rails/railties/lib/webrick_server.rb:62:in `dispatch'
+    /home/magno/rubys/work/depot/vendor/rails/railties/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /home/magno/rubys/work/depot/vendor/rails/railties/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+/!\ FAILSAFE /!\  Fri Jul 03 13:44:17 -0500 2009
+  Status: 500 Internal Server Error
+  /home/magno/rubys/work/depot/app/models/cart.rb:26: syntax error, unexpected $end, expecting kEND
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:215:in `load_without_new_constant_marking'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:215:in `load_file'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:214:in `load_file'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:95:in `require_or_load'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:260:in `load_missing_constant'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:467:in `const_missing'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:479:in `const_missing'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/inflector.rb:283:in `constantize'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/core_ext/string/inflections.rb:143:in `constantize'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/cgi_process.rb:173:in `stale_session_check!'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/cgi_process.rb:116:in `session'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/base.rb:1135:in `assign_shortcuts_without_flash'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/flash.rb:166:in `assign_shortcuts'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/base.rb:523:in `process_without_filters'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/session_management.rb:130:in `process'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/base.rb:389:in `process'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /home/magno/rubys/work/depot/vendor/rails/railties/lib/webrick_server.rb:112:in `handle_dispatch'
+    /home/magno/rubys/work/depot/vendor/rails/railties/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /home/magno/rubys/work/depot/vendor/rails/railties/lib/webrick_server.rb:62:in `dispatch'
+    /home/magno/rubys/work/depot/vendor/rails/railties/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /home/magno/rubys/work/depot/vendor/rails/railties/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+/!\ FAILSAFE /!\  Fri Jul 03 13:44:17 -0500 2009
+  Status: 500 Internal Server Error
+  /home/magno/rubys/work/depot/app/models/cart.rb:26: syntax error, unexpected $end, expecting kEND
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:215:in `load_without_new_constant_marking'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:215:in `load_file'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:214:in `load_file'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:95:in `require_or_load'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:260:in `load_missing_constant'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:467:in `const_missing'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:479:in `const_missing'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/inflector.rb:283:in `constantize'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/core_ext/string/inflections.rb:143:in `constantize'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/cgi_process.rb:173:in `stale_session_check!'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/cgi_process.rb:116:in `session'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/base.rb:1135:in `assign_shortcuts_without_flash'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/flash.rb:166:in `assign_shortcuts'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/base.rb:523:in `process_without_filters'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/session_management.rb:130:in `process'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/base.rb:389:in `process'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /home/magno/rubys/work/depot/vendor/rails/railties/lib/webrick_server.rb:112:in `handle_dispatch'
+    /home/magno/rubys/work/depot/vendor/rails/railties/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /home/magno/rubys/work/depot/vendor/rails/railties/lib/webrick_server.rb:62:in `dispatch'
+    /home/magno/rubys/work/depot/vendor/rails/railties/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /home/magno/rubys/work/depot/vendor/rails/railties/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+/!\ FAILSAFE /!\  Fri Jul 03 13:44:57 -0500 2009
+  Status: 500 Internal Server Error
+  /home/magno/rubys/work/depot/app/models/cart.rb:26: syntax error, unexpected $end, expecting kEND
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:215:in `load_without_new_constant_marking'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:215:in `load_file'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:214:in `load_file'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:95:in `require_or_load'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:260:in `load_missing_constant'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:467:in `const_missing'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:479:in `const_missing'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/inflector.rb:283:in `constantize'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/core_ext/string/inflections.rb:143:in `constantize'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/cgi_process.rb:173:in `stale_session_check!'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/cgi_process.rb:116:in `session'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/base.rb:1135:in `assign_shortcuts_without_flash'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/flash.rb:166:in `assign_shortcuts'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/base.rb:523:in `process_without_filters'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/session_management.rb:130:in `process'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/base.rb:389:in `process'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /home/magno/rubys/work/depot/vendor/rails/railties/lib/webrick_server.rb:112:in `handle_dispatch'
+    /home/magno/rubys/work/depot/vendor/rails/railties/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /home/magno/rubys/work/depot/vendor/rails/railties/lib/webrick_server.rb:62:in `dispatch'
+    /home/magno/rubys/work/depot/vendor/rails/railties/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /home/magno/rubys/work/depot/vendor/rails/railties/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+/!\ FAILSAFE /!\  Fri Jul 03 13:46:00 -0500 2009
+  Status: 500 Internal Server Error
+  /home/magno/rubys/work/depot/app/models/cart.rb:26: syntax error, unexpected $end, expecting kEND
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:215:in `load_without_new_constant_marking'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:215:in `load_file'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:214:in `load_file'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:95:in `require_or_load'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:260:in `load_missing_constant'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:467:in `const_missing'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:479:in `const_missing'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/inflector.rb:283:in `constantize'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/core_ext/string/inflections.rb:143:in `constantize'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/cgi_process.rb:173:in `stale_session_check!'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/cgi_process.rb:116:in `session'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/base.rb:1135:in `assign_shortcuts_without_flash'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/flash.rb:166:in `assign_shortcuts'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/base.rb:523:in `process_without_filters'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/session_management.rb:130:in `process'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/base.rb:389:in `process'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /home/magno/rubys/work/depot/vendor/rails/railties/lib/webrick_server.rb:112:in `handle_dispatch'
+    /home/magno/rubys/work/depot/vendor/rails/railties/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /home/magno/rubys/work/depot/vendor/rails/railties/lib/webrick_server.rb:62:in `dispatch'
+    /home/magno/rubys/work/depot/vendor/rails/railties/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /home/magno/rubys/work/depot/vendor/rails/railties/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+/!\ FAILSAFE /!\  Fri Jul 03 13:47:22 -0500 2009
+  Status: 500 Internal Server Error
+  /home/magno/rubys/work/depot/app/models/cart.rb:26: syntax error, unexpected $end, expecting kEND
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:215:in `load_without_new_constant_marking'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:215:in `load_file'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:214:in `load_file'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:95:in `require_or_load'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:260:in `load_missing_constant'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:467:in `const_missing'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:479:in `const_missing'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/inflector.rb:283:in `constantize'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/core_ext/string/inflections.rb:143:in `constantize'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/cgi_process.rb:173:in `stale_session_check!'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/cgi_process.rb:116:in `session'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/base.rb:1135:in `assign_shortcuts_without_flash'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/flash.rb:166:in `assign_shortcuts'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/base.rb:523:in `process_without_filters'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/session_management.rb:130:in `process'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/base.rb:389:in `process'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /home/magno/rubys/work/depot/vendor/rails/railties/lib/webrick_server.rb:112:in `handle_dispatch'
+    /home/magno/rubys/work/depot/vendor/rails/railties/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /home/magno/rubys/work/depot/vendor/rails/railties/lib/webrick_server.rb:62:in `dispatch'
+    /home/magno/rubys/work/depot/vendor/rails/railties/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /home/magno/rubys/work/depot/vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /home/magno/rubys/work/depot/vendor/rails/railties/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-07-03 13:49:32) [GET]
+  Session ID: 3661f7c8b150cb590ce4fd1ea0cc2bf1
+  Parameters: {"action"=>"index", "controller"=>"store"}
+  [4;36;1mProduct Load (0.000210)[0m   [0;1mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;35;1mProduct Columns (0.012314)[0m   [0mSHOW FIELDS FROM `products`[0m
+Rendered store/_cart_item (0.00018)
+Rendered store/_cart_item (0.00008)
+Rendered store/_cart_item (0.00009)
+Rendered store/_cart (0.00189)
+Completed in 0.05057 (19 reqs/sec) | Rendering: 0.03035 (60%) | DB: 0.03400 (67%) | 200 OK [http://localhost/store]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-03 13:49:32) [GET]
+  Session ID: 3661f7c8b150cb590ce4fd1ea0cc2bf1
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/images/logo.png" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing/recognition_optimisation.rb:67:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing/route_set.rb:384:in `recognize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:148:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:112:in `handle_dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /vendor/rails/railties/lib/webrick_server.rb:62:in `dispatch'
+    /vendor/rails/railties/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing StoreController#empty_cart (for 127.0.0.1 at 2009-07-03 13:49:37) [POST]
+  Session ID: 3661f7c8b150cb590ce4fd1ea0cc2bf1
+  Parameters: {"authenticity_token"=>"aacb307c697e41b3151c0e75a28a5e38cd23ea89", "action"=>"empty_cart", "controller"=>"store"}
+Redirected to http://localhost:3000/store
+Completed in 0.00851 (117 reqs/sec) | DB: 0.03261 (383%) | 302 Found [http://localhost/store/empty_cart]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-07-03 13:49:37) [GET]
+  Session ID: 3661f7c8b150cb590ce4fd1ea0cc2bf1
+  Parameters: {"action"=>"index", "controller"=>"store"}
+  [4;36;1mProduct Load (0.000124)[0m   [0;1mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;35;1mProduct Columns (0.000774)[0m   [0mSHOW FIELDS FROM `products`[0m
+Rendered store/_cart (0.00037)
+Completed in 0.01905 (52 reqs/sec) | Rendering: 0.00681 (35%) | DB: 0.00693 (36%) | 200 OK [http://localhost/store]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-03 13:49:37) [GET]
+  Session ID: 3661f7c8b150cb590ce4fd1ea0cc2bf1
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/images/logo.png" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing/recognition_optimisation.rb:67:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing/route_set.rb:384:in `recognize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:148:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:112:in `handle_dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /vendor/rails/railties/lib/webrick_server.rb:62:in `dispatch'
+    /vendor/rails/railties/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering /home/magno/rubys/work/depot/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2009-07-03 13:49:39) [POST]
+  Session ID: 3661f7c8b150cb590ce4fd1ea0cc2bf1
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"aacb307c697e41b3151c0e75a28a5e38cd23ea89", "action"=>"add_to_cart", "id"=>"1", "controller"=>"store"}
+  [4;36;1mProduct Columns (0.000815)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+  [4;35;1mProduct Load (0.000069)[0m   [0mSELECT * FROM `products` WHERE (`products`.`id` = 1) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (0.00148)
+Rendered store/_cart (0.00225)
+Completed in 0.01866 (53 reqs/sec) | Rendering: 0.00811 (43%) | DB: 0.00797 (42%) | 200 OK [http://localhost/store/add_to_cart/1]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2009-07-03 13:49:42) [POST]
+  Session ID: 3661f7c8b150cb590ce4fd1ea0cc2bf1
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"aacb307c697e41b3151c0e75a28a5e38cd23ea89", "action"=>"add_to_cart", "id"=>"2", "controller"=>"store"}
+  [4;36;1mProduct Columns (0.001435)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+  [4;35;1mProduct Load (0.000155)[0m   [0mSELECT * FROM `products` WHERE (`products`.`id` = 2) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (0.00132)
+Rendered store/_cart_item (0.00009)
+Rendered store/_cart (0.00224)
+Completed in 0.02071 (48 reqs/sec) | Rendering: 0.01094 (52%) | DB: 0.00908 (43%) | 200 OK [http://localhost/store/add_to_cart/2]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2009-07-03 13:49:43) [POST]
+  Session ID: 3661f7c8b150cb590ce4fd1ea0cc2bf1
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"aacb307c697e41b3151c0e75a28a5e38cd23ea89", "action"=>"add_to_cart", "id"=>"3", "controller"=>"store"}
+  [4;36;1mProduct Columns (0.000779)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+  [4;35;1mProduct Load (0.000066)[0m   [0mSELECT * FROM `products` WHERE (`products`.`id` = 3) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (0.00139)
+Rendered store/_cart_item (0.00008)
+Rendered store/_cart_item (0.00008)
+Rendered store/_cart (0.00244)
+Completed in 0.01270 (78 reqs/sec) | Rendering: 0.00807 (63%) | DB: 0.00712 (56%) | 200 OK [http://localhost/store/add_to_cart/3]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2009-07-03 13:49:45) [POST]
+  Session ID: 3661f7c8b150cb590ce4fd1ea0cc2bf1
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"aacb307c697e41b3151c0e75a28a5e38cd23ea89", "action"=>"add_to_cart", "id"=>"2", "controller"=>"store"}
+  [4;36;1mProduct Columns (0.001423)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+  [4;35;1mProduct Load (0.000149)[0m   [0mSELECT * FROM `products` WHERE (`products`.`id` = 2) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (0.00291)
+Rendered store/_cart_item (0.00026)
+Rendered store/_cart_item (0.00020)
+Rendered store/_cart (0.00522)
+Completed in 0.02715 (36 reqs/sec) | Rendering: 0.01703 (62%) | DB: 0.01032 (38%) | 200 OK [http://localhost/store/add_to_cart/2]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2009-07-03 13:49:45) [POST]
+  Session ID: 3661f7c8b150cb590ce4fd1ea0cc2bf1
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"aacb307c697e41b3151c0e75a28a5e38cd23ea89", "action"=>"add_to_cart", "id"=>"1", "controller"=>"store"}
+  [4;36;1mProduct Columns (0.001499)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+  [4;35;1mProduct Load (0.000147)[0m   [0mSELECT * FROM `products` WHERE (`products`.`id` = 1) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (0.00381)
+Rendered store/_cart_item (0.00021)
+Rendered store/_cart_item (0.00019)
+Rendered store/_cart (0.01051)
+Completed in 0.04311 (23 reqs/sec) | Rendering: 0.02875 (66%) | DB: 0.00823 (19%) | 200 OK [http://localhost/store/add_to_cart/1]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2009-07-03 13:49:46) [POST]
+  Session ID: 3661f7c8b150cb590ce4fd1ea0cc2bf1
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"aacb307c697e41b3151c0e75a28a5e38cd23ea89", "action"=>"add_to_cart", "id"=>"2", "controller"=>"store"}
+  [4;36;1mProduct Columns (0.001496)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+  [4;35;1mProduct Load (0.000147)[0m   [0mSELECT * FROM `products` WHERE (`products`.`id` = 2) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (0.00134)
+Rendered store/_cart_item (0.00009)
+Rendered store/_cart_item (0.00008)
+Rendered store/_cart (0.00237)
+Completed in 0.03303 (30 reqs/sec) | Rendering: 0.01804 (54%) | DB: 0.01184 (35%) | 200 OK [http://localhost/store/add_to_cart/2]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2009-07-03 13:49:48) [POST]
+  Session ID: 3661f7c8b150cb590ce4fd1ea0cc2bf1
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"aacb307c697e41b3151c0e75a28a5e38cd23ea89", "action"=>"add_to_cart", "id"=>"3", "controller"=>"store"}
+  [4;36;1mProduct Columns (0.001404)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+  [4;35;1mProduct Load (0.000145)[0m   [0mSELECT * FROM `products` WHERE (`products`.`id` = 3) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (0.00306)
+Rendered store/_cart_item (0.00020)
+Rendered store/_cart_item (0.00019)
+Rendered store/_cart (0.00531)
+Completed in 0.02685 (37 reqs/sec) | Rendering: 0.01722 (64%) | DB: 0.00368 (13%) | 200 OK [http://localhost/store/add_to_cart/3]
